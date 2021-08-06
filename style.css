@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'poppins';
+}
+
+.container {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec-2 {
+    width: 40%;
+    color: white;
+}
+
+.sec-2 h2 {
+    font-size: 3rem;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    border-style: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+button:hover {
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    box-shadow: 4px 23px 5px 0px rgba(0, 0, 0, 0.10);
+}
+
+footer {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1280px) {
+    .sec-1 img {
+        width: 30rem;
+    }
+    .sec-2 h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sec-1 img {
+        width: 25rem;
+    }
+    .sec-2 h2 {
+        font-size: 1.5rem;
+    }
+    .sec-2 p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .container {
+        display: block;
+        justify-content: center;
+    }
+    .sec-1 img {
+        display: block;
+        margin: auto;
+    }
+    .sec-2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .sec-1 img {
+        width: 20rem;
+    }
+}
